@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Calculator</title>
+    <script src="jstohtml.js"></script>
+</head>
+<body>
+    <h1>Wage Calculator</h1>
+    
+    <p>Enter the following information to calculate your wage:</p>
+    
+    <label for="regularHoursWorked">Regular Hours Worked:</label>
+    <input type="number" id="regularHoursWorked" placeholder="Enter regular hours worked" />
+    
+    <label for="regularHourlyPayRate">Regular Hourly Pay Rate:</label>
+    <input type="number" id="regularHourlyPayRate" placeholder="Enter regular hourly pay rate" />
+
+    <label for="overtimeHours">Overtime Hours:</label>
+    <input type="number" id="overtimeHours" placeholder="Enter overtime hours" />
+
+    <label for="overtimeHourlyPayRate">Overtime Hourly Pay Rate:</label>
+    <input type="number" id="overtimeHourlyPayRate" placeholder="Enter overtime hourly pay rate" />
+    
+    <button onclick="calculateWage()">Calculate Wage</button>
+    
+    <h2>Results:</h2>
+    
+    <p id="regularWageResult"></p>
+    <p id="overtimeWageResult"></p>
+    <p id="totalWageResult"></p>
+</body>
+</html>
